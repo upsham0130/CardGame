@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Card Game</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <style>
+      .cont{
+        margin-top: 7%;
+        text-align: center;
+      }
+      .img{
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+      }
+      .ims{
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+  </style>
+
+</head>
+
+<body>
+<div class="cont">
+    <div class="img">
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Select a Deck</h1>
+        <a href="/pickm"><img class="ims" src="{{ url_for('static', filename='m.png') }}" width="15%" height="15%"/></a>
+        <a href="/pickr"><img class="ims" src="{{ url_for('static', filename='r.png') }}" width="15%" height="15%"/></a>
+    </div>
+</div>
+</body>
+</html>
