@@ -17,6 +17,15 @@
         height: 100%;
         display: inline-block;
       }
+      .button{
+        background:    #ffcccc;
+        border-radius: 11px;
+        padding:       20px 45px;
+        color:         #000000;
+        display:       inline-block;
+        font:          normal bold 26px/1 "Open Sans", sans-serif;
+        text-align:    center;
+      }
   </style>
 
 </head>
@@ -25,8 +34,8 @@
 <div class="cont">
     <div class="img">
         <h1 style="font-family:Arial, Helvetica, sans-serif;">The selected card is:</h1>
-        <img src="{{ url_for('static', filename=file) }}" width="15%" height="15%"/>
-        <a href="/"><button type="button">Back</button></a>
+        <img src="{{ url_for('static', filename=file) }}" width="15%" height="15%"/><br/>
+        <a href="/"><div class="button">Back</div></a>
     </div>
 </div>
 </body>

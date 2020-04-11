@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <style>
       .cont{
-        margin-top: 7%;
         text-align: center;
       }
       .img{
@@ -24,6 +23,7 @@
       .side{
           position: absolute;
           text-align: center;
+          margin-top: 25%;
       }
       .button{
         background:    #ffcccc;
@@ -33,6 +33,12 @@
         display:       inline-block;
         font:          normal bold 26px/1 "Open Sans", sans-serif;
         text-align:    center;
+      }
+      .font{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p{
+          font-size: 15px;
       }
   </style>
 
@@ -47,7 +53,11 @@
     </div>
     <div class="cont">
         <div class="img">
-            <h1 style="font-family: Arial, Helvetica, sans-serif;">Select a Deck</h1>
+            <h1 class="font">INSTRUCTIONS:</h1>
+            <p class="font">Now that you are ready to play Operation Akshardham, here are the cards that you will be using to play! The Karma Cards are shown below in two decks. One deck is the Maya Karma Card deck and the other is the Raajipo Karma Card deck. Start your turn by rolling the dice using the online link or actual dice (not provided) and move your game piece that many spaces.</p>
+            <p class="font">IF you land on a BLUE space (R), you get the chance to select a card from the Raajipo Deck. Click on the card and a random card will be selected for you! Follow the directions and move your piece accordingly.</p>
+            <p class="font">IF you land on a RED space (M), you get the chance to select a card from the Maya Deck. Click on the card and a random card will be selected for you! Follow the directions and move your piece accordingly.</p>
+            <p class="font">To start a new game, simply refresh the website and it will refresh the deck automatically!</p><br/>
             <a href="/pickm"><img class="ims" src="{{ url_for('static', filename='ma.png') }}" width="15%" height="15%"/></a>
             <a href="/pickr"><img class="ims" src="{{ url_for('static', filename='ra.png') }}" width="15%" height="15%"/></a>
         </div>
